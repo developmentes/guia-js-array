@@ -5,15 +5,23 @@ export default {
   ],
 
   data: `
+
+  <div class="container">
   <h1>Mis Promedios</h1>
+  <div class="asignatura">
   <p>Asignatura</p>
   <input id="txt1" type="text" />
-  
+  </div>
+  <div class="box-notas">
+  <div class="nota">
   <p>nota 1</p>
   <input id="txtn1" type="number" />
+  </div>
+  <div class="porcentaje">
   <p>% N° 1</p>
   <input id="txtp1" type="number" />
-
+  </div>
+  </div>
   <p>nota 2</p>
   <input id="txtn2" type="number" />
   <p>% N° 1</p>
@@ -27,6 +35,8 @@ export default {
   <button onclick = "calcular()">Calcular</button>
 
   <div id="salida">salida</div>
+
+  </div>
   `,
 
   calcular: function () {
